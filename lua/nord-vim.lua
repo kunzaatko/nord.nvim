@@ -658,6 +658,14 @@ local theme = lush(function()
     -- YAML
     -- > stephpy/vim-yaml
     yamlKey {fg = clrs.nord7},
+
+    -- gitsigns.nvim
+    -- > lewis6991/gitsigns.nvim
+    GreenSign {fg = clrs.nord14},
+    BlueSign {fg = clrs.nord10},
+    RedSign {fg = clrs.nord11},
+    PurpleSign {fg = clrs.nord15},
+
   }
 end)
 
