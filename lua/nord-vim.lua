@@ -553,10 +553,10 @@ local theme = lush(function()
 
     -- vim-startify
     -- > mhinz/vim-startify
-    StartifyFile {fg = clrs.nord6},
+    StartifyFile {fg = clrs.nord11},
     StartifyFooter {fg = clrs.nord7},
-    StartifyHeader {fg = clrs.nord8},
-    StartifyNumber {fg = clrs.nord7},
+    StartifyHeader {fg = clrs.nord15},
+    StartifyNumber {fg = clrs.nord13},
     StartifyPath {fg = clrs.nord8},
     StartifyBracket {Delimiter},
     StartifySlash {Normal},
