@@ -121,9 +121,9 @@ local theme = lush(function()
       fg = clrs.nord4,
       bg = cfg.nord_cursor_line_number_background == 1 and nil or clrs.nord1,
     },
-    Folded {fg = clrs.nord3, bg = clrs.nord1, sp = spec.bold},
+    Folded {fg = clrs.nord3.li(7), bg = clrs.nord1, sp = spec.bold},
     FoldColumn {fg = clrs.nord3, bg = clrs.nord0},
-    SignColumn {fg = clrs.nord1, bg = clrs.nord0},
+    SignColumn {fg = clrs.nord1.li(2), bg = clrs.nord0},
 
     -- +-- Navigation --+
     Directory {fg = clrs.nord8},
