@@ -1,7 +1,8 @@
 local lush = require('lush')
 local hsl = lush.hsl
+local v = vim.g -- this must be done, because lush is executed in a bare environment
 
-vim.g.colors_name = 'nord'
+v.colors_name = 'nord'
 
 local clrs = {
   nord0 = hsl(220,16,22),
@@ -48,14 +49,14 @@ local nord3_brightened = {
 }
 
 local cfg = {
-  nord_bold = vim.g.nord_bold or 1,
-  nord_italic = vim.g.nord_italic or 0, -- TODO: Add other conditions
-  nord_underline = vim.g.nord_underline or 0,
-  nord_italic_comments = vim.g.nord_italic_comments or 0,
-  nord_uniform_status_lines = vim.g.nord_uniform_status_lines or 0,
-  nord_uniform_diff_background = vim.g.nord_uniform_diff_background or 0,
-  nord_cursor_line_number_background = vim.g.nord_cursor_line_number_background or 0,
-  nord_bold_vertical_split_line = vim.g.nord_bold_vertical_split_line or 0,
+  nord_bold = v.nord_bold or 1,
+  nord_italic = v.nord_italic or 0, -- TODO: Add other conditions
+  nord_underline = v.nord_underline or 0,
+  nord_italic_comments = v.nord_italic_comments or 0,
+  nord_uniform_status_lines = v.nord_uniform_status_lines or 0,
+  nord_uniform_diff_background = v.nord_uniform_diff_background or 0,
+  nord_cursor_line_number_background = v.nord_cursor_line_number_background or 0,
+  nord_bold_vertical_split_line = v.nord_bold_vertical_split_line or 0,
 }
 
 local spec = {
@@ -66,22 +67,22 @@ local spec = {
 }
 
 -- Neovim Terminal Colors --
-vim.g.terminal_color_0 = clrs.nord1
-vim.g.terminal_color_1 = clrs.nord11
-vim.g.terminal_color_2 = clrs.nord14
-vim.g.terminal_color_3 = clrs.nord13
-vim.g.terminal_color_4 = clrs.nord9
-vim.g.terminal_color_5 = clrs.nord15
-vim.g.terminal_color_6 = clrs.nord8
-vim.g.terminal_color_7 = clrs.nord5
-vim.g.terminal_color_8 = clrs.nord3
-vim.g.terminal_color_9 = clrs.nord11
-vim.g.terminal_color_10 = clrs.nord14
-vim.g.terminal_color_11 = clrs.nord13
-vim.g.terminal_color_12 = clrs.nord9
-vim.g.terminal_color_13 = clrs.nord15
-vim.g.terminal_color_14 = clrs.nord7
-vim.g.terminal_color_15 = clrs.nord6
+v.terminal_color_0 = clrs.nord1.hex
+v.terminal_color_1 = clrs.nord11.hex
+v.terminal_color_2 = clrs.nord14.hex
+v.terminal_color_3 = clrs.nord13.hex
+v.terminal_color_4 = clrs.nord9.hex
+v.terminal_color_5 = clrs.nord15.hex
+v.terminal_color_6 = clrs.nord8.hex
+v.terminal_color_7 = clrs.nord5.hex
+v.terminal_color_8 = clrs.nord3.hex
+v.terminal_color_9 = clrs.nord11.hex
+v.terminal_color_10 = clrs.nord14.hex
+v.terminal_color_11 = clrs.nord13.hex
+v.terminal_color_12 = clrs.nord9.hex
+v.terminal_color_13 = clrs.nord15.hex
+v.terminal_color_14 = clrs.nord7.hex
+v.terminal_color_15 = clrs.nord6.hex
 
 local theme = lush(function()
   return {
