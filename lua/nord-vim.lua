@@ -62,9 +62,9 @@ local cfg = {
 local spec = {
   bold = cfg.nord_bold == 1 and "bold," or "",
   italic = cfg.nord_italic == 1 and "italic," or "",
-  underline = cfg.nord_underline == 1 and "underline," or "NONE,"
-  }
-  spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ""
+  underline = cfg.nord_underline == 1 and "underline," or "NONE,",
+}
+spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ""
 
 -- Neovim Terminal Colors --
 v.terminal_color_0 = clrs.nord1.hex
@@ -109,10 +109,10 @@ local theme = lush(function()
     PmenuSel {fg = clrs.nord8, bg = clrs.nord3},
     PmenuThumb {fg = clrs.nord8, bg = clrs.nord3},
     SpecialKey {fg = clrs.nord3},
-    SpellBad {fg = clrs.nord11, bg = clrs.nord, sp = "undercurl", guisp = clrs.nord11},
-    SpellCap {fg = clrs.nord13, bg = clrs.nord0, sp = "undercurl", guisp = clrs.nord13},
-    SpellLocal {fg = clrs.nord5, bg = clrs.nord0, sp = "undercurl", guisp = clrs.nord5},
-    SpellRare {fg = clrs.nord6, bg = clrs.nord0, sp = "undercurl", guisp = clrs.nord6},
+    SpellBad {fg = clrs.nord11, bg = clrs.nord, gui = "undercurl", guisp = clrs.nord11},
+    SpellCap {fg = clrs.nord13, bg = clrs.nord0, gui = "undercurl", guisp = clrs.nord13},
+    SpellLocal {fg = clrs.nord5, bg = clrs.nord0, gui = "undercurl", guisp = clrs.nord5},
+    SpellRare {fg = clrs.nord6, bg = clrs.nord0, gui = "undercurl", guisp = clrs.nord6},
     Visual {bg = clrs.nord2},
     VisualNOS {bg = clrs.nord2},
 
@@ -122,7 +122,7 @@ local theme = lush(function()
       fg = clrs.nord4,
       bg = cfg.nord_cursor_line_number_background == 1 and nil or clrs.nord1,
     },
-    Folded {fg = clrs.nord3.li(7), bg = clrs.nord1, sp = spec.bold},
+    Folded {fg = clrs.nord3.li(7), bg = clrs.nord1, gui = spec.bold},
     FoldColumn {fg = clrs.nord3, bg = clrs.nord0},
     SignColumn {fg = clrs.nord1.li(2), bg = clrs.nord0},
 
@@ -135,37 +135,37 @@ local theme = lush(function()
     ModeMsg {fg = clrs.nord4},
     MoreMsg {fg = clrs.nord8},
     Question {fg = clrs.nord4},
-    StatusLine {fg = clrs.nord8, bg = clrs.nord3, sp = "NONE"},
+    StatusLine {fg = clrs.nord8, bg = clrs.nord3, gui = "NONE"},
     StatusLineNC {
       fg = clrs.nord4,
       bg = cfg.nord_uniform_status_lines == 0 and clrs.nord1 or crls.nord3,
-      sp = "NONE",
+      gui = "NONE",
     },
-    StatusLineTerm {fg = clrs.nord8, bg = clrs.nord3, sp = "NONE"},
+    StatusLineTerm {fg = clrs.nord8, bg = clrs.nord3, gui = "NONE"},
     StatusLineTermNC {
       fg = clrs.nord4,
       bg = cfg.nord_uniform_status_lines == 0 and clrs.nord1 or crls.nord3,
-      sp = "NONE",
+      gui = "NONE",
     },
     WarningMsg {fg = clrs.nord0, bg = clrs.nord13},
     WildMenu {fg = clrs.nord8, bg = clrs.nord1},
 
     -- +--- Search ---+
-    IncSearch {fg = clrs.nord6, bg = clrs.nord10, sp = spec.underline},
-    Search {fg = clrs.nord1, bg = clrs.nord8, sp = "NONE"},
+    IncSearch {fg = clrs.nord6, bg = clrs.nord10, gui = spec.underline},
+    Search {fg = clrs.nord1, bg = clrs.nord8, gui = "NONE"},
 
     -- +--- Tabs ---+
-    TabLine {fg = clrs.nord4, bg = clrs.nord1, sp = "NONE"},
-    TabLineFill {fg = clrs.nord4, bg = clrs.nord1, sp = "NONE"},
-    TabLineSel {fg = clrs.nord8, bg = clrs.nord3, sp = "NONE"},
+    TabLine {fg = clrs.nord4, bg = clrs.nord1, gui = "NONE"},
+    TabLineFill {fg = clrs.nord4, bg = clrs.nord1, gui = "NONE"},
+    TabLineSel {fg = clrs.nord8, bg = clrs.nord3, gui = "NONE"},
 
     -- +--- Window ---+
-    Title {fg = clrs.nord4, sp = "NONE"},
+    Title {fg = clrs.nord4, gui = "NONE"},
 
     VertSplit {
       fg = clrs.nord2,
       bg = cfg.nord_bold_vertical_split_line == 0 and clrs.nord0 or clrs.nord1,
-      sp = "NONE",
+      gui = "NONE",
     },
 
     -- +----------------------+
@@ -173,7 +173,7 @@ local theme = lush(function()
     -- +----------------------+
     Boolean {fg = clrs.nord9},
     Character {fg = clrs.nord14},
-    Comment {fg = clrs.nord3_bright, sp = spec.italicize_comments},
+    Comment {fg = clrs.nord3_bright, gui = spec.italicize_comments},
     Conditional {fg = clrs.nord9},
     Constant {fg = clrs.nord4},
     Define {fg = clrs.nord9},
@@ -181,24 +181,24 @@ local theme = lush(function()
     Exception {fg = clrs.nord9},
     Float {fg = clrs.nord15},
     Function {fg = clrs.nord8},
-    Identifier {fg = clrs.nord4, sp = "NONE"},
+    Identifier {fg = clrs.nord4, gui = "NONE"},
     Include {fg = clrs.nord9},
     Keyword {fg = clrs.nord9},
     Label {fg = clrs.nord9},
     Number {fg = clrs.nord15},
-    Operator {fg = clrs.nord9, sp = "NONE"},
-    PreProc {fg = clrs.nord9, sp = "NONE"},
+    Operator {fg = clrs.nord9, gui = "NONE"},
+    PreProc {fg = clrs.nord9, gui = "NONE"},
     Repeat {fg = clrs.nord9},
     Special {fg = clrs.nord4},
     SpecialChar {fg = clrs.nord13},
-    SpecialComment {fg = clrs.nord8, sp = spec.italicize_comments},
+    SpecialComment {fg = clrs.nord8, gui = spec.italicize_comments},
     Statement {fg = clrs.nord9},
     StorageClass {fg = clrs.nord9},
     String {fg = clrs.nord14},
     Structure {fg = clrs.nord9},
     Tag {fg = clrs.nord4},
     Todo {fg = clrs.nord13, bg = nil},
-    Type {fg = clrs.nord9, sp = "NONE"},
+    Type {fg = clrs.nord9, gui = "NONE"},
     Typedef {fg = clrs.nord9},
     Macro {Define},
     PreCondit {PreProc},
@@ -228,7 +228,7 @@ local theme = lush(function()
     -- asciidocURL {markdownLinkText},
 
     awkCharClass {fg = clrs.nord7},
-    awkPatterns {fg = clrs.nord9, sp = spec.bold},
+    awkPatterns {fg = clrs.nord9, gui = spec.bold},
     awkArrayElement {Identifier},
     awkBoolLogic {Keyword},
     awkBrktRegExp {SpecialChar},
@@ -255,8 +255,8 @@ local theme = lush(function()
     csXmlTag {SpecialComment},
 
     cssAttributeSelector {fg = clrs.nord7},
-    cssDefinition {fg = clrs.nord7, sp = "NONE"},
-    cssIdentifier {fg = clrs.nord7, sp = spec.underline},
+    cssDefinition {fg = clrs.nord7, gui = "NONE"},
+    cssIdentifier {fg = clrs.nord7, gui = spec.underline},
     cssStringQ {fg = clrs.nord7},
     cssAttr {Keyword},
     cssBraces {Delimiter},
@@ -306,7 +306,7 @@ local theme = lush(function()
     goConstants {Keyword},
 
     helpBar {fg = clrs.nord3},
-    helpHyperTextJump {fg = clrs.nord8, sp = spec.underline},
+    helpHyperTextJump {fg = clrs.nord8, gui = spec.underline},
 
     markdownBlockquote {fg = clrs.nord7},
     markdownCode {fg = clrs.nord7},
@@ -316,7 +316,7 @@ local theme = lush(function()
     markdownIdDeclaration {fg = clrs.nord7},
     markdownH1 {fg = clrs.nord8},
     markdownLinkText {fg = clrs.nord8},
-    markdownUrl {fg = clrs.nord4, sp = "NONE"},
+    markdownUrl {fg = clrs.nord4, gui = "NONE"},
     markdownBold {Bold},
     markdownBoldDelimiter {Keyword},
     markdownFootnoteDefinition {markdownFootnote},
@@ -335,7 +335,7 @@ local theme = lush(function()
     markdownHeadingDelimiter {Keyword},
 
     htmlArg {fg = clrs.nord7},
-    htmlLink {fg = clrs.nord4, sp = "NONE", sp = "NONE"},
+    htmlLink {fg = clrs.nord4, gui = "NONE", gui = "NONE"},
     htmlBold {Bold},
     htmlTag {Keyword},
     htmlEndTag {htmlTag},
@@ -389,7 +389,7 @@ local theme = lush(function()
     pythonEscape {SpecialChar},
 
     rubyConstant {fg = clrs.nord7},
-    rubySymbol {fg = clrs.nord6, sp = spec.bold},
+    rubySymbol {fg = clrs.nord6, gui = spec.bold},
     rubyAttribute {Identifier},
     rubyBlockParameterList {Operator},
     rubyInterpolationDelimiter {Keyword},
@@ -399,11 +399,11 @@ local theme = lush(function()
     rubyRegexp {SpecialChar},
 
     rustAttribute {fg = clrs.nord10},
-    rustEnum {fg = clrs.nord7, sp = spec.bold},
-    rustMacro {fg = clrs.nord8, sp = spec.bold},
+    rustEnum {fg = clrs.nord7, gui = spec.bold},
+    rustMacro {fg = clrs.nord8, gui = spec.bold},
     rustModPath {fg = clrs.nord7},
-    rustPanic {fg = clrs.nord9, sp = spec.bold},
-    rustTrait {fg = clrs.nord7, sp = spec.italic},
+    rustPanic {fg = clrs.nord9, gui = spec.bold},
+    rustTrait {fg = clrs.nord7, gui = spec.italic},
     rustCommentLineDoc {Comment},
     rustDerive {rustAttribute},
     rustEnumVariant {rustEnum},
@@ -411,7 +411,7 @@ local theme = lush(function()
     rustQuestionMark {Keyword},
 
     sassClass {fg = clrs.nord7},
-    sassId {fg = clrs.nord7, sp = spec.underline},
+    sassId {fg = clrs.nord7, gui = spec.underline},
     sassAmpersand {Keyword},
     sassClassChar {Delimiter},
     sassControl {Keyword},
@@ -442,7 +442,7 @@ local theme = lush(function()
     vimUserFunc {Function},
 
     xmlAttrib {fg = clrs.nord7},
-    xmlCdataStart {fg = clrs.nord3_bright, sp = spec.bold},
+    xmlCdataStart {fg = clrs.nord3_bright, gui = spec.bold},
     xmlNamespace {fg = clrs.nord7},
     xmlAttribPunct {Delimiter},
     xmlCdata {Comment},
@@ -464,13 +464,13 @@ local theme = lush(function()
     -- > w0rp/ale
     ALEWarningSign {fg = clrs.nord13},
     ALEErrorSign {fg = clrs.nord11},
-    ALEWarning {fg = clrs.nord13, sp = "undercurl"},
-    ALEError {fg = clrs.nord11, sp = "undercurl"},
+    ALEWarning {fg = clrs.nord13, gui = "undercurl"},
+    ALEError {fg = clrs.nord11, gui = "undercurl"},
 
     -- Coc
     -- > neoclide/coc
-    CocWarningHighlight {fg = clrs.nord13, sp = "undercurl"},
-    CocErrorHighlight {fg = clrs.nord11, sp = "undercurl"},
+    CocWarningHighlight {fg = clrs.nord13, gui = "undercurl"},
+    CocErrorHighlight {fg = clrs.nord11, gui = "undercurl"},
     CocWarningSign {fg = clrs.nord13},
     CocErrorSign {fg = clrs.nord11},
     CocInfoSign {fg = clrs.nord8},
@@ -505,7 +505,7 @@ local theme = lush(function()
 
     -- davidhalter/jedi-vim
     jediFunction {fg = clrs.nord4, bg = clrs.nord3},
-    jediFat {fg = clrs.nord8, bg = clrs.nord3, sp = spec.underline .. spec.bold},
+    jediFat {fg = clrs.nord8, bg = clrs.nord3, gui = spec.underline .. spec.bold},
 
     -- NERDTree
     -- > scrooloose/nerdtree
@@ -525,7 +525,7 @@ local theme = lush(function()
     ClapFile {fg = clrs.nord4},
     ClapMatches {fg = clrs.nord8},
     ClapNoMatchesFound {fg = clrs.nord13},
-    ClapSelected {fg = clrs.nord7, sp = spec.bold},
+    ClapSelected {fg = clrs.nord7, gui = spec.bold},
     ClapSelectedSign {fg = clrs.nord9},
 
     -- TODO: What was happening here?
@@ -572,7 +572,7 @@ local theme = lush(function()
 
     -- JavaScript
     -- > pangloss/vim-javascript
-    jsGlobalNodeObjects {fg = clrs.nord8, sp = spec.italic},
+    jsGlobalNodeObjects {fg = clrs.nord8, gui = spec.italic},
     hjsBrackets {Delimiter},
     jsFuncCall {Function},
     jsFuncParens {Delimiter},
@@ -583,10 +583,10 @@ local theme = lush(function()
 
     -- TypeScript
     -- > HerringtonDarkholme/yats.vim
-    typescriptBOMWindowMethod {fg = clrs.nord8, sp = spec.italic},
+    typescriptBOMWindowMethod {fg = clrs.nord8, gui = spec.italic},
     typescriptClassName {fg = clrs.nord7},
     typescriptDecorator {fg = clrs.nord12},
-    typescriptInterfaceName {fg = clrs.nord7, sp = spec.bold},
+    typescriptInterfaceName {fg = clrs.nord7, gui = spec.bold},
     typescriptRegexpString {fg = clrs.nord13},
     -- TypeScript JSX
     tsxAttrib {fg = clrs.nord7},
@@ -650,7 +650,7 @@ local theme = lush(function()
     -- > vimwiki/vimwiki
     -- TODO: Add missing
 
-    VimwikiLink {fg = clrs.nord8, sp = spec.underline},
+    VimwikiLink {fg = clrs.nord8, gui = spec.underline},
     VimwikiHeaderChar {markdownHeadingDelimiter},
     VimwikiHR {Keyword},
     VimwikiList {markdownListMarker},
