@@ -62,9 +62,9 @@ local cfg = {
 local spec = {
   bold = cfg.nord_bold == 1 and "bold," or "",
   italic = cfg.nord_italic == 1 and "italic," or "",
-  underline = cfg.nord_underline == 1 and "underline," or "NONE,",
-  italicize_comments = cfg.nord_italic_comments == 1 and spec.italic or "",
-}
+  underline = cfg.nord_underline == 1 and "underline," or "NONE,"
+  }
+  spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ""
 
 -- Neovim Terminal Colors --
 v.terminal_color_0 = clrs.nord1.hex
