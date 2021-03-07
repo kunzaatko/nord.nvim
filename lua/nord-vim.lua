@@ -282,22 +282,22 @@ local theme = lush(function()
     DiffAdd {
       fg = clrs.nord14,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      "inverse",
+      gui = "inverse",
     },
     DiffChange {
       fg = clrs.nord13,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      "inverse",
+      gui = "inverse",
     },
     DiffDelete {
       fg = clrs.nord11,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      "inverse",
+      gui = "inverse",
     },
     DiffText {
       fg = clrs.nord9,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      "inverse",
+      gui = "inverse",
     },
 
     gitconfigVariable {fg = clrs.nord7},
