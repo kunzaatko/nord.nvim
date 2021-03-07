@@ -510,10 +510,27 @@ local theme = lush(function()
 
     -- Nvim LSP
     -- > neovim/nvim-lsp
-    LSPDiagnosticsWarning {fg = clrs.nord13},
-    LSPDiagnosticsError {fg = clrs.nord11},
-    LSPDiagnosticsInformation {fg = clrs.nord8},
-    LSPDiagnosticsHint {fg = clrs.nord10},
+    LspDiagnosticsWarning {fg = clrs.nord13},
+    LspDiagnosticsError {fg = clrs.nord11},
+    LspDiagnosticsInformation {fg = clrs.nord8},
+    LspDiagnosticsHint {fg = clrs.nord10},
+
+    LSPDiagnosticsVirtualTextWarning {
+      fg = LspDiagnosticsWarning.fg.de(20).li(10),
+      gui = spec.italic,
+    },
+    LSPDiagnosticsVirtualTextError {
+      fg = LspDiagnosticsError.fg.de(20).li(10),
+      gui = spec.italic,
+    },
+    LSPDiagnosticsVirtualTextInformation {
+      fg = LspDiagnosticsInformation.fg.de(20).da(10),
+      gui = spec.italic,
+    },
+    LSPDiagnosticsVirtualTextHint {
+      fg = LspDiagnosticsHint.fg.de(20).li(10),
+      gui = spec.italic,
+    },
 
     -- GitGutter
     -- > airblade/vim-gitgutter
