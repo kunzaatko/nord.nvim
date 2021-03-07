@@ -335,7 +335,7 @@ local theme = lush(function()
     markdownHeadingDelimiter {Keyword},
 
     htmlArg {fg = clrs.nord7},
-    htmlLink {fg = clrs.nord4, gui = "NONE", gui = "NONE"},
+    htmlLink {fg = clrs.nord4, gui = "NONE"},
     htmlBold {Bold},
     htmlTag {Keyword},
     htmlEndTag {htmlTag},
