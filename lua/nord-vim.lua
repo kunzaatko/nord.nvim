@@ -60,11 +60,20 @@ local cfg = {
 }
 
 local spec = {
-  bold = cfg.nord_bold == 1 and "bold," or "",
-  italic = cfg.nord_italic == 1 and "italic," or "",
-  underline = cfg.nord_underline == 1 and "underline," or "NONE,",
+  bold = cfg.nord_bold == 1 and "bold" or "",
+  italic = cfg.nord_italic == 1 and "italic" or "",
+  underline = cfg.nord_underline == 1 and "underline" or "",
 }
 spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ""
+
+local gui_combine = function(gui)
+  for i = 1, #gui do
+    if gui[i] == "" then
+      table.remove(gui, i)
+    end
+  end
+  return table.concat(gui, ',')
+end
 
 -- Neovim Terminal Colors --
 v.terminal_color_0 = clrs.nord1.hex
@@ -506,7 +515,11 @@ local theme = lush(function()
 
     -- davidhalter/jedi-vim
     jediFunction {fg = clrs.nord4, bg = clrs.nord3},
-    jediFat {fg = clrs.nord8, bg = clrs.nord3, gui = spec.underline .. spec.bold},
+    jediFat {
+      fg = clrs.nord8,
+      bg = clrs.nord3,
+      gui = gui_combine {spec.underline, spec.bold},
+    },
 
     -- NERDTree
     -- > scrooloose/nerdtree
