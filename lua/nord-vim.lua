@@ -63,6 +63,8 @@ local spec = {
   bold = cfg.nord_bold == 1 and "bold" or "",
   italic = cfg.nord_italic == 1 and "italic" or "",
   underline = cfg.nord_underline == 1 and "underline" or "",
+  inverse = "inverse",
+  undercurl = "undercurl",
 }
 spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ""
 
@@ -118,10 +120,30 @@ local theme = lush(function()
     PmenuSel {fg = clrs.nord8, bg = clrs.nord3},
     PmenuThumb {fg = clrs.nord8, bg = clrs.nord3},
     SpecialKey {fg = clrs.nord3},
-    SpellBad {fg = clrs.nord11, bg = clrs.nord, gui = "undercurl", guisp = clrs.nord11},
-    SpellCap {fg = clrs.nord13, bg = clrs.nord0, gui = "undercurl", guisp = clrs.nord13},
-    SpellLocal {fg = clrs.nord5, bg = clrs.nord0, gui = "undercurl", guisp = clrs.nord5},
-    SpellRare {fg = clrs.nord6, bg = clrs.nord0, gui = "undercurl", guisp = clrs.nord6},
+    SpellBad {
+      fg = clrs.nord11,
+      bg = clrs.nord,
+      gui = spec.undercurl,
+      guisp = clrs.nord11,
+    },
+    SpellCap {
+      fg = clrs.nord13,
+      bg = clrs.nord0,
+      gui = spec.undercurl,
+      guisp = clrs.nord13,
+    },
+    SpellLocal {
+      fg = clrs.nord5,
+      bg = clrs.nord0,
+      gui = spec.undercurl,
+      guisp = clrs.nord5,
+    },
+    SpellRare {
+      fg = clrs.nord6,
+      bg = clrs.nord0,
+      gui = spec.undercurl,
+      guisp = clrs.nord6,
+    },
     Visual {bg = clrs.nord2},
     VisualNOS {bg = clrs.nord2},
 
@@ -291,22 +313,22 @@ local theme = lush(function()
     DiffAdd {
       fg = clrs.nord14,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      gui = "inverse",
+      gui = spec.inverse,
     },
     DiffChange {
       fg = clrs.nord13,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      gui = "inverse",
+      gui = spec.inverse,
     },
     DiffDelete {
       fg = clrs.nord11,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      gui = "inverse",
+      gui = spec.inverse,
     },
     DiffText {
       fg = clrs.nord9,
       bg = cfg.nord_uniform_diff_background == 0 and clrs.nord0 or clrs.nord1,
-      gui = "inverse",
+      gui = spec.inverse,
     },
 
     gitconfigVariable {fg = clrs.nord7},
@@ -474,13 +496,13 @@ local theme = lush(function()
     -- > w0rp/ale
     ALEWarningSign {fg = clrs.nord13},
     ALEErrorSign {fg = clrs.nord11},
-    ALEWarning {fg = clrs.nord13, gui = "undercurl"},
-    ALEError {fg = clrs.nord11, gui = "undercurl"},
+    ALEWarning {fg = clrs.nord13, gui = spec.undercurl},
+    ALEError {fg = clrs.nord11, gui = spec.undercurl},
 
     -- Coc
     -- > neoclide/coc
-    CocWarningHighlight {fg = clrs.nord13, gui = "undercurl"},
-    CocErrorHighlight {fg = clrs.nord11, gui = "undercurl"},
+    CocWarningHighlight {fg = clrs.nord13, gui = spec.undercurl},
+    CocErrorHighlight {fg = clrs.nord11, gui = spec.undercurl},
     CocWarningSign {fg = clrs.nord13},
     CocErrorSign {fg = clrs.nord11},
     CocInfoSign {fg = clrs.nord8},
