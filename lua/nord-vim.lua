@@ -233,6 +233,7 @@ local theme = lush(function()
     Typedef {fg = clrs.nord9},
     Macro {Define},
     PreCondit {PreProc},
+    Conceal {bg = Normal.bg, fg = Normal.fg.ro(10)},
 
     -- +-----------+
     -- + Languages +
