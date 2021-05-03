@@ -116,7 +116,7 @@ local theme = lush(function()
     NonText {fg = clrs.nord2},
     Normal {fg = clrs.nord4, bg = clrs.nord0},
     Pmenu {fg = clrs.nord4, bg = clrs.nord2},
-    PmenuSbar {fg = clrs.nord4, bg = clrs.nord2},
+    PmenuSbar {fg = clrs.nord2, bg = clrs.nord4},
     PmenuSel {fg = clrs.nord8, bg = clrs.nord3},
     PmenuThumb {fg = clrs.nord8, bg = clrs.nord3},
     SpecialKey {fg = clrs.nord3},
