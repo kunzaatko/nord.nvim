@@ -118,6 +118,7 @@ local theme = lush(function()
     Pmenu {fg = clrs.nord4, bg = clrs.nord2},
     PmenuSbar {fg = clrs.nord2, bg = clrs.nord4},
     PmenuSel {fg = clrs.nord8, bg = clrs.nord3},
+    -- PmenuSel {fg = clrs.nord3, bg =clrs.nord8},
     PmenuThumb {fg = clrs.nord8, bg = clrs.nord3},
     SpecialKey {fg = clrs.nord3},
     SpellBad {
