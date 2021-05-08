@@ -18,7 +18,7 @@ Every option that is possible to set in [nord-vim](https://github.com/arcticices
 | [`nord_underline`](https://www.nordtheme.com/docs/ports/vim/configuration#underline-style)                                          | `0`     | Enable underlining                                           |
 
 # Tweaking
-Since this port is written in [lush.nvim](https://github.com/rktjmp/lush.nvim), you can easily tweak the individual colours. Just open `lua/nord-vim.lua` and customize the colours using the `lush` colour methods.
+Since this port is written in [lush.nvim](https://github.com/rktjmp/lush.nvim), you can easily tweak the individual colours. Just open `lua/nord-nvim.lua` and customize the colours using the `lush` colour methods.
 
 For example, if you want to make the background a bit darker
 ```lua
@@ -26,7 +26,7 @@ For example, if you want to make the background a bit darker
 Normal {fg = clrs.nord4, bg = clrs.nord0.darken(10)},
 ...
 ```
-You can preview the changes with the `:Lushify` when the `lush.nvim` plugin is loaded.
+You can preview the changes with the `:Lushify` when the `lush.nvim` plugin is loaded. For more methods and possibilities, look into [`lush.nvim`](https://github.com/rktjmp/lush.nvim) (It is amazing!).
 
 # Installation
 ## [packer.nvim](https://github.com/wbthomason/packer.nvim)
