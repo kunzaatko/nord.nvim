@@ -1,6 +1,8 @@
 # Nord.nvim
 A port of the popular and simplistic [nord](https://www.nordtheme.com/) colour scheme to nvim. The [`trunk`](https://github.com/kunzaatko/nord.nvim/tree/trunk) branch is an exact clone of the [nord-vim](https://github.com/arcticicestudio/nord-vim) colourscheme but ported to the [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
+![nord.nvim](https://user-images.githubusercontent.com/56647779/117521912-a0188b00-afb0-11eb-857a-7554874c5050.png)
+
 # Customization
 Every option that is possible to set in [nord-vim](https://github.com/arcticicestudio/nord-vim) is included. The defaults are preserved. For previews and full descriptions, see the official [nord vim port web](https://www.nordtheme.com/docs/ports/vim/configuration).
 
