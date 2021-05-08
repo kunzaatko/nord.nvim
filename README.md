@@ -1,10 +1,10 @@
 # Nord.nvim
-A port of the popular and simplistic [nord](https://www.nordtheme.com/) colour scheme to nvim. The [`trunk`](https://github.com/kunzaatko/nord.nvim/tree/trunk) branch is an exact clone of the [nord-vim](https://github.com/arcticicestudio/nord-vim) colourscheme but ported to the [lush.nvim](https://github.com/rktjmp/lush.nvim).
+A port of the popular and simplistic [nord](https://www.nordtheme.com/) colour scheme to neovim. The [`trunk`](https://github.com/kunzaatko/nord.nvim/tree/trunk) branch is an exact clone of the [nord-vim](https://github.com/arcticicestudio/nord-vim) colourscheme but written in [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
 ![nord.nvim](https://user-images.githubusercontent.com/56647779/117521912-a0188b00-afb0-11eb-857a-7554874c5050.png)
 
 # Customization
-Every option that is possible to set in [nord-vim](https://github.com/arcticicestudio/nord-vim) is included. The defaults are preserved. For previews and full descriptions, see the official [nord vim port web](https://www.nordtheme.com/docs/ports/vim/configuration).
+Every option that is possible to set in [nord-vim](https://github.com/arcticicestudio/nord-vim) is included. The defaults are preserved. For previews and full descriptions, see the official [nord vim port configuration website page](https://www.nordtheme.com/docs/ports/vim/configuration).
 
 | Option                                                                                                                              | Default | Description                                                  |
 | --------                                                                                                                            | ------- | -----------                                                  |
@@ -26,7 +26,7 @@ For example, if you want to make the background a bit darker
 Normal {fg = clrs.nord4, bg = clrs.nord0.darken(10)},
 ...
 ```
-You can preview the changes with the `:Lushify` when the `lush.nvim` plugin is loaded. For more methods and possibilities, look into [`lush.nvim`](https://github.com/rktjmp/lush.nvim) (It is amazing!).
+You can preview the colour groups with the `:Lushify` if the `lush.nvim` plugin is loaded. For more methods and possibilities, look into [`lush.nvim`](https://github.com/rktjmp/lush.nvim) (It is amazing!).
 
 # Installation
 ## [packer.nvim](https://github.com/wbthomason/packer.nvim)
@@ -47,9 +47,9 @@ colorscheme nord
 ```
 
 # Plugins
-All the plugins that are included in the [vim port](https://github.com/arcticicestudio/nord-vim) are included.
+All plugins that are in the [vim port](https://github.com/arcticicestudio/nord-vim) are included.
 
 # Contribution
-This branch is intended to be an __exact copy__ of the [vim port](https://github.com/arcticicestudio/nord-vim). I will be restrained in adding any additional features or colour definitions. Only possible alterations from the original can be some neovim only features such as the planned definition of [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) colour groups.
+This branch is intended to be an _exact copy_ of the [vim port](https://github.com/arcticicestudio/nord-vim). I will be restrained in adding any additional features or colour definitions. Only adequate alterations from the original should be neovim only features such as the planned definition of [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) colour groups etc.
 
-If you want a customized (not the unofficial) nord theme, change to the [`colourful`](https://github.com/kunzaatko/nord.nvim/tree/colourful) branch. There you can file issues if you think something could look better and submit PRs for adding plugins etc.
+If you want a customized (not the unofficial) nord theme, switch to the [`colourful`](https://github.com/kunzaatko/nord.nvim/tree/colourful) branch. There you can file issues if you think something could look better and submit PRs for adding plugins etc.
