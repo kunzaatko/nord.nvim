@@ -50,6 +50,6 @@ colorscheme nord
 All plugins that are in the [vim port](https://github.com/arcticicestudio/nord-vim) are included.
 
 # Contribution
-This branch is intended to be an _exact copy_ of the [vim port](https://github.com/arcticicestudio/nord-vim). I will be restrained in adding any additional features or colour definitions. Only adequate alterations from the original should be neovim only features such as the planned definition of [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) colour groups etc.
+This branch is intended to be an _exact copy_ of the [vim port](https://github.com/arcticicestudio/nord-vim). I will be restrained in adding any additional features or colour definitions. Only adequate alterations from the original should be neovim-exclusive features such as the planned definition of [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) colour groups etc.
 
 If you want a customized (not the unofficial) nord theme, switch to the [`colourful`](https://github.com/kunzaatko/nord.nvim/tree/colourful) branch. There you can file issues if you think something could look better and submit PRs for adding plugins etc.
