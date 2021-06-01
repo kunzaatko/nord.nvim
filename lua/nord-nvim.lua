@@ -342,6 +342,7 @@ local theme = lush(function()
 
     markdownBlockquote {fg = clrs.nord7},
     markdownCode {fg = clrs.nord7},
+    markdownCodeBlock {fg = clrs.nord7},
     markdownCodeDelimiter {fg = clrs.nord7},
     markdownFootnote {fg = clrs.nord7},
     markdownId {fg = clrs.nord7},
@@ -515,6 +516,21 @@ local theme = lush(function()
     LspDiagnosticsError {fg = clrs.nord11},
     LspDiagnosticsInformation {fg = clrs.nord8},
     LspDiagnosticsHint {fg = clrs.nord10},
+
+    LspDiagnosticsUnderlineError {fg = "none", gui = "none"},
+    LspDiagnosticsUnderlineWarning {fg = "none", gui = "none"},
+    LspDiagnosticsUnderlineInformation {fg = "none", gui = "none"},
+    LspDiagnosticsUnderlineHint {fg = "none", gui = "none"},
+
+    LspDiagnosticsFloatingError {fg = clrs.nord4},
+    LspDiagnosticsFloatingWarning {fg = clrs.nord4},
+    LspDiagnosticsFloatingInformation {fg = clrs.nord4},
+    LspDiagnosticsFloatingHint {fg = clrs.nord4},
+
+    LspDiagnosticsSignWarning {fg = clrs.nord13},
+    LspDiagnosticsSignError {fg = clrs.nord11},
+    LspDiagnosticsSignInformation {fg = clrs.nord8},
+    LspDiagnosticsSignHint {fg = clrs.nord10},
 
     LSPDiagnosticsVirtualTextWarning {
       fg = LspDiagnosticsWarning.fg.de(20).li(10),
