@@ -527,10 +527,11 @@ local theme = lush(function()
     LspDiagnosticsFloatingInformation {fg = clrs.nord4},
     LspDiagnosticsFloatingHint {fg = clrs.nord4},
 
-    LspDiagnosticsSignWarning {fg = clrs.nord13},
+    -- built in neovim lsp diagnostics
     LspDiagnosticsSignError {fg = clrs.nord11},
-    LspDiagnosticsSignInformation {fg = clrs.nord8},
-    LspDiagnosticsSignHint {fg = clrs.nord10},
+    LspDiagnosticsSignWarning {fg = clrs.nord13},
+    LspDiagnosticsSignInformation {fg = clrs.nord9},
+    LspDiagnosticsSignHint {fg = clrs.nord8},
 
     LSPDiagnosticsVirtualTextWarning {
       fg = LspDiagnosticsWarning.fg.de(20).li(10),
