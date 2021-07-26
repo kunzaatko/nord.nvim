@@ -737,11 +737,6 @@ local theme = lush(function()
     RedSign {fg = clrs.nord11},
     PurpleSign {fg = clrs.nord15},
 
-    -- built in neovim lsp diagnostics
-    LspDiagnosticsSignError {fg = clrs.nord11},
-    LspDiagnosticsSignWarning {fg = clrs.nord13},
-    LspDiagnosticsSignInformation {fg = clrs.nord9},
-    LspDiagnosticsSignHint {fg = clrs.nord8},
   }
 end)
 
