@@ -33,7 +33,7 @@ You can preview the colour groups with the `:Lushify` if the `lush.nvim` plugin 
 ```lua
 use {
     'kunzaatko/nord.nvim',
-    requires = {'rktjmp/lush.nvim', opt = true},
+    requires = 'rktjmp/lush.nvim',
     config = function()
         vim.cmd("colorscheme nord")
     end,
