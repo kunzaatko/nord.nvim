@@ -33,11 +33,10 @@ You can preview the colour groups with the `:Lushify` if the `lush.nvim` plugin 
 ```lua
 use {
     'kunzaatko/nord.nvim',
-    requires = 'rktjmp/lush.nvim',
+    requires = {'rktjmp/lush.nvim', opt=true},
     config = function()
         vim.cmd("colorscheme nord")
     end,
-    after = {'lush.nvim'},
 } -- colorscheme
 ```
 ## [vim-plug](https://github.com/junegunn/vim-plug)
