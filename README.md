@@ -21,9 +21,9 @@ The configuration options are set the same way as in the vim version, through vi
 
 ---
 
-## Additional functionality
+## Additional Functionality
 
-### Plugin and Language colour spec modularity
+### Modularity of Specifications
 
 Due to the features of `lush.nvim` and the added capabilities from using `lua`, it is possible to load languages and plugin specifications for colours modularly. You can only load the plugin options that you will use. This possibility is added by setting
 
