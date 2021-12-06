@@ -80,7 +80,7 @@ All plugins that are in the [vim port](https://github.com/arcticicestudio/nord-v
 
 # Contribution
 
-This branch is intended to be an _exact copy_ of the [vim port](https://github.com/arcticicestudio/nord-vim) in the base spec. However, if you want to add support for a plugin, you can do so by adding the spec to the `lua/pkgs/` directory. To load it by default, you should add it to the default list `vim.g.nord_pkgs` in `lua/nord-nvim.lua`. Dont forget to add it to the `README.md` to document it for other users.
+This branch is intended to be an _exact copy_ of the [vim port](https://github.com/arcticicestudio/nord-vim) in the base spec. However, if you want to add support for a plugin, you can do so by adding the spec to the `lua/pkgs/` directory. To load it by default, you should add it to the default list `vim.g.nord_pkgs` in `lua/nord-nvim.lua`. Don't forget to add it to the `README.md` to document it for other users.
 
 If you want a customized (not the unofficial) nord theme, switch to the [`colourful`](https://github.com/kunzaatko/nord.nvim/tree/colourful) branch. There you can file issues even for the base specification, if you think anything could look better and submit anykind of PRs.
 
