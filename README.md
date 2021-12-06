@@ -19,7 +19,11 @@ The configuration options are set the same way as in the vim version, through vi
 | [`vim.g.nord_italic_comments`](https://www.nordtheme.com/docs/ports/vim/configuration#italic-comments)                                    | `0`     | Use italic font for comments                                 |
 | [`vim.g.nord_underline`](https://www.nordtheme.com/docs/ports/vim/configuration#underline-style)                                          | `0`     | Enable underlining                                           |
 
-## Added functionality
+---
+
+## Additional functionality
+
+### Plugin and Language colour spec modularity
 
 Due to the features of `lush.nvim` and the added capabilities from using `lua`, it is possible to load languages and plugin specifications for colours modularly. You can only load the plugin options that you will use. This possibility is added by setting
 
