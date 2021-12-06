@@ -31,7 +31,9 @@ vim.g.nord_langs = {'c', 'python', 'yaml'}  -- 'asciidoc', 'awk', 'c', 'cmake', 
 vim.g.nord_pkgs = {'gitsigns', 'vim-startify'} -- 'ale', 'coc', 'ctrlp', 'gitsigns', 'haskell-vim', 'jedi-vim', 'nerdtree', 'vim-clap', 'vim-fugitive', 'vim-gitgutter', 'vim-indent-guides', 'vim-javascript', 'vim-markdown', 'vim-plug', 'vim-signature', 'vim-signify', 'vim-startify', 'vimwiki', 'vim-yaml', 'yats'
 ```
 
-The default behaviour remains the same, that is that all the language support specs and plugins are loaded.
+This may decrease your loading time. It should not be an issue on modern machines, but nevertheless, it makes the loading just a little bit more snappy and you can be sure that nothing you do not care for is slowing you down.
+
+The default behaviour remains the same, that is, that all the language support specs and plugins are loaded.
 
 # Tweaking
 
