@@ -8,16 +8,16 @@ A port of the popular and simplistic [nord](https://www.nordtheme.com/) colour s
 
 The configuration options are set the same way as in the vim version, through vim global variables. Every option that is possible to set in [nord-vim](https://github.com/arcticicestudio/nord-vim) is included. The defaults are preserved. For previews and full descriptions, see the official [nord vim port configuration website page](https://www.nordtheme.com/docs/ports/vim/configuration).
 
-| Option                                                                                                                              | Default | Description                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------ |
-| [`nord_cursor_line_number_background`](https://www.nordtheme.com/docs/ports/vim/configuration#active-cursor-line-number-background) | `0`     | Use the same background on number when `cursorline` enabled  |
-| [`nord_uniform_status_lines`](https://www.nordtheme.com/docs/ports/vim/configuration#uniform-status-lines)                          | `0`     | Use the same background for all statuslines on split windows |
-| [`nord_bold_vertical_split_line`](https://www.nordtheme.com/docs/ports/vim/configuration#bold-vertical-split-lines)                 | `0`     | Lighter background for vertical split                        |
-| [`nord_uniform_diff_background`](https://www.nordtheme.com/docs/ports/vim/configuration#uniform-diff-background)                    | `0`     | Use forground colours in diffs                               |
-| [`nord_bold`](https://www.nordtheme.com/docs/ports/vim/configuration#bold-style)                                                    | `1`     | Enable bold font                                             |
-| [`nord_italic`](https://www.nordtheme.com/docs/ports/vim/configuration#italic-style)                                                | `1`     | Enable italic font                                           |
-| [`nord_italic_comments`](https://www.nordtheme.com/docs/ports/vim/configuration#italic-comments)                                    | `0`     | Use italic font for comments                                 |
-| [`nord_underline`](https://www.nordtheme.com/docs/ports/vim/configuration#underline-style)                                          | `0`     | Enable underlining                                           |
+| Option                                                                                                                                    | Default | Description                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------ |
+| [`vim.g.nord_cursor_line_number_background`](https://www.nordtheme.com/docs/ports/vim/configuration#active-cursor-line-number-background) | `0`     | Use the same background on number when `cursorline` enabled  |
+| [`vim.g.nord_uniform_status_lines`](https://www.nordtheme.com/docs/ports/vim/configuration#uniform-status-lines)                          | `0`     | Use the same background for all statuslines on split windows |
+| [`vim.g.nord_bold_vertical_split_line`](https://www.nordtheme.com/docs/ports/vim/configuration#bold-vertical-split-lines)                 | `0`     | Lighter background for vertical split                        |
+| [`vim.g.nord_uniform_diff_background`](https://www.nordtheme.com/docs/ports/vim/configuration#uniform-diff-background)                    | `0`     | Use forground colours in diffs                               |
+| [`vim.g.nord_bold`](https://www.nordtheme.com/docs/ports/vim/configuration#bold-style)                                                    | `1`     | Enable bold font                                             |
+| [`vim.g.nord_italic`](https://www.nordtheme.com/docs/ports/vim/configuration#italic-style)                                                | `1`     | Enable italic font                                           |
+| [`vim.g.nord_italic_comments`](https://www.nordtheme.com/docs/ports/vim/configuration#italic-comments)                                    | `0`     | Use italic font for comments                                 |
+| [`vim.g.nord_underline`](https://www.nordtheme.com/docs/ports/vim/configuration#underline-style)                                          | `0`     | Enable underlining                                           |
 
 ## Added functionality
 
