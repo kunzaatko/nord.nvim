@@ -6,7 +6,7 @@ A port of the popular and simplistic [nord](https://www.nordtheme.com/) colour s
 
 # Customization
 
-The configuration options are set the same way as in the vim version, through vim global variables, unlike most modern lua plugins. Every option that is possible to set in [nord-vim](https://github.com/arcticicestudio/nord-vim) is included. The defaults are preserved. For previews and full descriptions, see the official [nord vim port configuration website page](https://www.nordtheme.com/docs/ports/vim/configuration).
+The configuration options are set the same way as in the vim version, through vim global variables. Every option that is possible to set in [nord-vim](https://github.com/arcticicestudio/nord-vim) is included. The defaults are preserved. For previews and full descriptions, see the official [nord vim port configuration website page](https://www.nordtheme.com/docs/ports/vim/configuration).
 
 | Option                                                                                                                              | Default | Description                                                  |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------ |
