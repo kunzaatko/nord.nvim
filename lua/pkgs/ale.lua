@@ -11,7 +11,7 @@ local pkg = function()
     ALEErrorSign {fg = clrs.nord11},
     ALEWarning {fg = clrs.nord13, gui = spec.undercurl},
     ALEError {fg = clrs.nord11, gui = spec.undercurl},
-    }
+  }
 end
 
 return pkg

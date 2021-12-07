@@ -1,5 +1,5 @@
 local palette = require 'nord-palette'
-local base = require'base'
+local base = require 'base'
 
 local clrs = palette.clrs
 local spec = palette.spec
