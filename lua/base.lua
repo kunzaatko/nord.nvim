@@ -189,41 +189,41 @@ local theme = lush(function()
 
     -- Nvim LSP
     -- > neovim/nvim-lsp
-    LspDiagnosticsWarning {fg = clrs.nord13},
-    LspDiagnosticsError {fg = clrs.nord11},
-    LspDiagnosticsInformation {fg = clrs.nord8},
-    LspDiagnosticsHint {fg = clrs.nord10},
+    DiagnosticWarn {fg = clrs.nord13},
+    DiagnosticError {fg = clrs.nord11},
+    DiagnosticInfo {fg = clrs.nord8},
+    DiagnosticHint {fg = clrs.nord10},
 
-    LspDiagnosticsUnderlineError {fg = "none", gui = "none"},
-    LspDiagnosticsUnderlineWarning {fg = "none", gui = "none"},
-    LspDiagnosticsUnderlineInformation {fg = "none", gui = "none"},
-    LspDiagnosticsUnderlineHint {fg = "none", gui = "none"},
+    DiagnosticUnderlineError {fg = "none", gui = "none"},
+    DiagnosticUnderlineWarn {fg = "none", gui = "none"},
+    DiagnosticUnderlineInfo {fg = "none", gui = "none"},
+    DiagnosticUnderlineHint {fg = "none", gui = "none"},
 
-    LspDiagnosticsFloatingError {fg = clrs.nord4},
-    LspDiagnosticsFloatingWarning {fg = clrs.nord4},
-    LspDiagnosticsFloatingInformation {fg = clrs.nord4},
-    LspDiagnosticsFloatingHint {fg = clrs.nord4},
+    DiagnosticFloatingError {fg = clrs.nord4},
+    DiagnosticFloatingWarn {fg = clrs.nord4},
+    DiagnosticFloatingInfo {fg = clrs.nord4},
+    DiagnosticFloatingHint {fg = clrs.nord4},
 
     -- built in neovim lsp diagnostics
-    LspDiagnosticsSignError {fg = clrs.nord11},
-    LspDiagnosticsSignWarning {fg = clrs.nord13},
-    LspDiagnosticsSignInformation {fg = clrs.nord9},
-    LspDiagnosticsSignHint {fg = clrs.nord8},
+    DiagnosticSignError {fg = clrs.nord11},
+    DiagnosticSignWarn {fg = clrs.nord13},
+    DiagnosticSignInfo {fg = clrs.nord9},
+    DiagnosticSignHint {fg = clrs.nord8},
 
-    LSPDiagnosticsVirtualTextWarning {
-      fg = LspDiagnosticsWarning.fg.de(20).li(10),
+    DiagnosticVirtualTextWarn {
+      fg = DiagnosticWarn.fg.de(20).li(10),
       gui = spec.italic,
     },
-    LSPDiagnosticsVirtualTextError {
-      fg = LspDiagnosticsError.fg.de(20).li(10),
+    DiagnosticVirtualTextError {
+      fg = DiagnosticError.fg.de(20).li(10),
       gui = spec.italic,
     },
-    LSPDiagnosticsVirtualTextInformation {
-      fg = LspDiagnosticsInformation.fg.de(20).da(10),
+    DiagnosticVirtualTextInfo {
+      fg = DiagnosticInfo.fg.de(20).da(10),
       gui = spec.italic,
     },
     LSPDiagnosticsVirtualTextHint {
-      fg = LspDiagnosticsHint.fg.de(20).li(10),
+      fg = DiagnosticHint.fg.de(20).li(10),
       gui = spec.italic,
     },
   }
