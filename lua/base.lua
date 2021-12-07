@@ -82,11 +82,11 @@ local theme = lush(function()
     -- +-- Gutter --+
     CursorColumn {bg = clrs.nord1},
     CursorLineNr {
-      fg = clrs.nord4,
+      fg = clrs.nord4.da(10),
       bg = cfg.nord_cursor_line_number_background == 1 and nil or clrs.nord1,
     },
     Folded {fg = clrs.nord3.li(7), bg = clrs.nord1, gui = spec.bold},
-    FoldColumn {fg = clrs.nord3, bg = clrs.nord0},
+    FoldColumn {fg = clrs.nord14.de(50).da(30), bg = clrs.nord0},
     SignColumn {fg = clrs.nord1.li(2), bg = clrs.nord0},
 
     -- +-- Navigation --+
@@ -94,11 +94,11 @@ local theme = lush(function()
 
     -- +--- Prompt/Status ---+
     EndOfBuffer {fg = clrs.nord1},
-    ErrorMsg {fg = clrs.nord4, bg = clrs.nord11},
+    ErrorMsg {fg = clrs.nord4.da(10), bg = clrs.nord11.da(20).de(15)},
     ModeMsg {fg = clrs.nord4},
     MoreMsg {fg = clrs.nord8},
     Question {fg = clrs.nord4},
-    StatusLine {fg = clrs.nord8, bg = clrs.nord3, gui = "NONE"},
+    StatusLine {bg = clrs.nord0.da(50), gui = "NONE"},
     StatusLineNC {
       fg = clrs.nord4,
       bg = cfg.nord_uniform_status_lines == 0 and clrs.nord1 or crls.nord3,
@@ -110,7 +110,7 @@ local theme = lush(function()
       bg = cfg.nord_uniform_status_lines == 0 and clrs.nord1 or crls.nord3,
       gui = "NONE",
     },
-    WarningMsg {fg = clrs.nord0, bg = clrs.nord13},
+    WarningMsg {fg = clrs.nord0, bg = clrs.nord13.da(20).de(15)},
     WildMenu {fg = clrs.nord8, bg = clrs.nord1},
 
     -- +--- Search ---+
@@ -136,7 +136,7 @@ local theme = lush(function()
     -- +----------------------+
     Boolean {fg = clrs.nord9},
     Character {fg = clrs.nord14},
-    Comment {fg = clrs.nord3_bright, gui = spec.italicize_comments},
+    Comment {fg = clrs.nord3_bright.sa(10), gui = spec.italicize_comments},
     Conditional {fg = clrs.nord9},
     Constant {fg = clrs.nord4},
     Define {fg = clrs.nord9},
@@ -157,7 +157,7 @@ local theme = lush(function()
     SpecialComment {fg = clrs.nord8, gui = spec.italicize_comments},
     Statement {fg = clrs.nord9},
     StorageClass {fg = clrs.nord9},
-    String {fg = clrs.nord14},
+    String {fg = clrs.nord14, gui = spec.italic},
     Structure {fg = clrs.nord9},
     Tag {fg = clrs.nord4},
     Todo {fg = clrs.nord13, bg = nil},
@@ -192,27 +192,18 @@ local theme = lush(function()
       gui = spec.inverse,
     },
 
-    LspDiagnosticsWarning {fg = clrs.nord13},
-    LspDiagnosticsError {fg = clrs.nord11},
-    LspDiagnosticsInformation {fg = clrs.nord8},
-    LspDiagnosticsHint {fg = clrs.nord10},
+    DiagnosticWarn {fg = clrs.nord13},
+    DiagnosticError {fg = clrs.nord11},
+    DiagnosticInfo {fg = clrs.nord8},
+    DiagnosticHint {fg = clrs.nord10},
 
-    LSPDiagnosticsVirtualTextWarning {
-      fg = LspDiagnosticsWarning.fg.de(20).li(10),
+    DiagnosticVirtualTextWarn {fg = DiagnosticWarn.fg.da(20), gui = spec.italic},
+    DiagnosticVirtualTextError {
+      fg = DiagnosticError.fg.de(20).li(10),
       gui = spec.italic,
     },
-    LSPDiagnosticsVirtualTextError {
-      fg = LspDiagnosticsError.fg.de(20).li(10),
-      gui = spec.italic,
-    },
-    LSPDiagnosticsVirtualTextInformation {
-      fg = LspDiagnosticsInformation.fg.de(20).da(10),
-      gui = spec.italic,
-    },
-    LSPDiagnosticsVirtualTextHint {
-      fg = LspDiagnosticsHint.fg.de(20).li(10),
-      gui = spec.italic,
-    },
+    DiagnosticVirtualTextInfo {fg = DiagnosticInfo.fg.de(20).da(10), gui = spec.italic},
+    DiagnosticVirtualTextHint {fg = DiagnosticHint.fg.de(20).li(10), gui = spec.italic},
 
   }
 end) -- }}}
