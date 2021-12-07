@@ -44,11 +44,13 @@ end
 v.nord_pkgs = v.nord_pkgs or {
   'ale',
   'coc',
+  'cmp',
   'ctrlp',
   'gitsigns',
   'haskell-vim',
   'jedi-vim',
   'nerdtree',
+  'tree-sitter',
   'vim-clap',
   'vim-fugitive',
   'vim-gitgutter',
@@ -70,4 +72,3 @@ end
 return theme
 
 -- vi:nowrap
-
