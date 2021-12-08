@@ -15,6 +15,7 @@ v.nord_langs = v.nord_langs or {
   'dosini',
   'dt',
   'gitconfig',
+  'gitcommit',
   'go',
   'help',
   'html',
