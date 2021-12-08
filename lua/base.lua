@@ -4,7 +4,6 @@ local v = vim.g -- this must be done, because lush is executed in a bare environ
 local palette = require 'nord-palette'
 
 local spec = palette.spec
-local gui_combine = palette.gui_combine
 local cfg = palette.cfg
 local clrs = palette.clrs
 
