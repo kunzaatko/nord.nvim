@@ -12,7 +12,7 @@ local pkg = function()
     StartifyHeader {fg = clrs.nord15},
     StartifyNumber {fg = clrs.nord13},
     StartifyPath {fg = clrs.nord8},
-    StartifyBracket {base.Delimiter},
+    StartifyBracket {fg = clrs.nord6},
     StartifySlash {base.Normal},
     StartifySpecial {base.Comment},
   }
