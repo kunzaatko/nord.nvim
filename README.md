@@ -32,12 +32,12 @@ Due to the features of `lush.nvim` and the added capabilities from using `lua`, 
 vim.g.nord_langs = {'c', 'python', 'yaml'}  -- 'asciidoc', 'awk', 'c', 'cmake', 'cs', 'css', 'dosini', 'dt', 'gitconfig', 'go', 'help', 'html', 'java', 'json', 'less', 'lisp', 'lua', 'markdown', 'perl', 'php', 'pod', 'python', 'ruby', 'rust', 'sass', 'sh', 'sql', 'vim', 'xml', 'yaml'
 
 -- Plugins
-vim.g.nord_pkgs = {'gitsigns', 'vim-startify'} -- 'ale', 'coc', 'cmp', 'ctrlp', 'gitsigns', 'haskell-vim', 'jedi-vim', 'nerdtree', 'tree-sitter', 'vim-clap', 'vim-fugitive', 'vim-gitgutter', 'vim-indent-guides', 'vim-javascript', 'vim-markdown', 'vim-plug', 'vim-signature', 'vim-signify', 'vim-startify', 'vimwiki', 'vim-yaml', 'yats'
+vim.g.nord_pkgs = {'gitsigns', 'vim-startify'} -- 'ale', 'coc', 'ctrlp', 'haskell-vim', 'jedi-vim', 'nerdtree', 'vim-clap', 'vim-fugitive', 'vim-gitgutter', 'vim-indent-guides', 'vim-javascript', 'vim-markdown', 'vim-plug', 'vim-signature', 'vim-signify', 'vimwiki', 'vim-yaml', 'yats'
 ```
 
 This may decrease your loading time. It should not be an issue on modern machines, but nevertheless, it makes the loading just a little bit more snappy and you can be sure that nothing you do not care for is slowing you down.
 
-The default behaviour remains the same, that is, that all the language support specs and plugins are loaded.
+The default behaviour remains the same, that is, that all the language support specs and plugins that are in the original are loaded. You can add others by defining the global variables as stated above. Additional package support groups you can add are `{'vimtex', 'cmp', 'gitsigns', 'vim-startify'}` and languages `{'gitcommit'}`.
 
 # Tweaking
 

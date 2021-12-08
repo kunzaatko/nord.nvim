@@ -5,6 +5,7 @@ v.colors_name = 'nord'
 
 local theme = require 'base'
 
+-- {'gitcommit'}
 v.nord_langs = v.nord_langs or {
   'asciidoc',
   'awk',
@@ -41,12 +42,11 @@ for _, lang in pairs(v.nord_langs) do
   theme = lush.extends({theme}).with(require('langs.' .. lang))
 end
 
+-- {'vimtex', 'cmp', 'gitsigns', 'vim-startify', 'gitsigns'}
 v.nord_pkgs = v.nord_pkgs or {
   'ale',
   'coc',
-  'cmp',
   'ctrlp',
-  'gitsigns',
   'haskell-vim',
   'jedi-vim',
   'nerdtree',
@@ -60,7 +60,6 @@ v.nord_pkgs = v.nord_pkgs or {
   'vim-plug',
   'vim-signature',
   'vim-signify',
-  'vim-startify',
   'vimwiki',
   'vim-yaml',
   'yats',
