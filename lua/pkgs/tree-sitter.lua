@@ -18,6 +18,8 @@ local pkg = function()
     TSFunction {fg = clrs.nord8},
     TSProperty {TSFunction},
     TSBoolean {fg = base.Boolean.fg, gui = spec.italic},
+    TSNumber {TSBoolean},
+    TSConstant {fg = TSFuncBuiltin.fg, gui = spec.bold},
   }
 end
 
