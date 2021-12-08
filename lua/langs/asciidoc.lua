@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 local base = require 'base'
 
