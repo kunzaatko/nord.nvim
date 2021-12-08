@@ -53,10 +53,10 @@ local theme = lush(function()
     PmenuThumb {fg = clrs.nord8, bg = clrs.nord3},
     SpecialKey {fg = clrs.nord3},
     SpellBad {
-      fg = clrs.nord11,
-      bg = clrs.nord,
+      fg = clrs.nord11.de(50).da(20),
+      bg = clrs.nord0,
       gui = spec.undercurl,
-      guisp = clrs.nord11,
+      guisp = clrs.nord11.de(50).da(20),
     },
     SpellCap {
       fg = clrs.nord13,
