@@ -51,6 +51,7 @@ v.nord_pkgs = v.nord_pkgs or {
   'jedi-vim',
   'nerdtree',
   'tree-sitter',
+  'vimtex',
   'vim-clap',
   'vim-fugitive',
   'vim-gitgutter',
