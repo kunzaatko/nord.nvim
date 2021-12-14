@@ -7,40 +7,40 @@ local spec = palette.spec
 local gui_combine = palette.gui_combine
 local pkg = function()
   return {
-    texDelim {fg = clrs.nord15.da(10)},
-    texCmdItem {fg = clrs.nord11},
-    texCmdPart {texCmdItem},
-    texCmdEnv {fg = clrs.nord12},
-    texCmd {fg = clrs.nord10},
+    texDelim { fg = clrs.nord15.da(10) },
+    texCmdItem { fg = clrs.nord11 },
+    texCmdPart { texCmdItem },
+    texCmdEnv { fg = clrs.nord12 },
+    texCmd { fg = clrs.nord10 },
 
-    texStyleItal {fg = clrs.nord8, gui = spec.italic},
-    texStyleBold {fg = clrs.nord8, gui = spec.italic},
+    texStyleItal { fg = clrs.nord8, gui = spec.italic },
+    texStyleBold { fg = clrs.nord8, gui = spec.italic },
 
-    texEnvArgName {fg = clrs.nord13, gui = spec.bold},
-    texEnvOpt {fg = clrs.nord7},
+    texEnvArgName { fg = clrs.nord13, gui = spec.bold },
+    texEnvOpt { fg = clrs.nord7 },
     texPartArgTitle { fg = base.String.fg, gui = gui_combine { spec.bold, spec.italic } },
     -- FIX: Why doesn't this work? <08-12-21, kunzaatko> --
-    texArg {fg = clrs.nord7},
+    texArg { fg = clrs.nord7 },
     texTitleArg {
       fg = texPartArgTitle.fg,
       gui = gui_combine { spec.bold, spec.italic, spec.underline },
     },
-    texRefArg {fg = texPartArgTitle.fg, gui = spec.italic},
-    texFilesOpt {texEnvOpt},
+    texRefArg { fg = texPartArgTitle.fg, gui = spec.italic },
+    texFilesOpt { texEnvOpt },
 
-    texMathSuperSub {fg = clrs.nord11},
-    texMathSymbol {fg = clrs.nord13},
-    texSIArgNumU {base.String},
-    texMathZoneW {fg = clrs.nord9},
-    texMathDelim {fg = clrs.nord11.da(20), gui = spec.bold},
-    texMathZoneXX {fg = clrs.nord12},
-    texMathOper {fg = clrs.nord11.da(10), gui = spec.bold},
-    texMathSub {texMathSuperSub},
-    texMathSuper {texMathSuperSub},
+    texMathSuperSub { fg = clrs.nord11 },
     texCmdGreek { fg = clrs.nord13, gui = gui_combine { spec.italic, spec.bold } },
+    texMathSymbol { fg = clrs.nord13 },
+    texSIArgNumU { base.String },
+    texMathZoneW { fg = clrs.nord9 },
+    texMathDelim { fg = clrs.nord11.da(20), gui = spec.bold },
+    texMathZoneXX { fg = clrs.nord12 },
+    texMathOper { fg = clrs.nord11.da(10), gui = spec.bold },
+    texMathSub { texMathSuperSub },
+    texMathSuper { texMathSuperSub },
 
-    texGroup {fg = clrs.nord7},
-    texTheoremEnvOpt {texPartArgTitle},
+    texGroup { fg = clrs.nord7 },
+    texTheoremEnvOpt { texPartArgTitle },
   }
 end
 

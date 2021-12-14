@@ -7,10 +7,10 @@ local palette = require 'nord-palette'
 local clrs = palette.clrs
 local pkg = function()
   return {
-    GitGutterAdd {fg = clrs.nord14},
-    GitGutterChange {fg = clrs.nord13},
-    GitGutterChangeDelete {fg = clrs.nord11},
-    GitGutterDelete {fg = clrs.nord11},
+    GitGutterAdd { fg = clrs.nord14 },
+    GitGutterChange { fg = clrs.nord13 },
+    GitGutterChangeDelete { fg = clrs.nord11 },
+    GitGutterDelete { fg = clrs.nord11 },
   }
 end
 

@@ -39,7 +39,7 @@ v.nord_langs = v.nord_langs or {
   'yaml',
 }
 for _, lang in pairs(v.nord_langs) do
-  theme = lush.extends({theme}).with(require('langs.' .. lang))
+  theme = lush.extends({ theme }).with(require('langs.' .. lang))
 end
 
 v.nord_pkgs = v.nord_pkgs or {
@@ -68,7 +68,7 @@ v.nord_pkgs = v.nord_pkgs or {
   'yats',
 }
 for _, pkg in pairs(v.nord_pkgs) do
-  theme = lush.extends({theme}).with(require('pkgs.' .. pkg))
+  theme = lush.extends({ theme }).with(require('pkgs.' .. pkg))
 end
 
 return theme

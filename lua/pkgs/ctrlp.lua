@@ -5,7 +5,7 @@ local base = require 'base'
 -- > ctrlpvim/ctrlp.vim
 
 local pkg = function()
-  return {hCtrlPMatch {base.Keyword}, CtrlPBufferHid {base.Normal}}
+  return { hCtrlPMatch { base.Keyword }, CtrlPBufferHid { base.Normal } }
 end
 
 return pkg

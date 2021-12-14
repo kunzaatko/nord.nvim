@@ -11,10 +11,10 @@ local pkg = function()
   return {
     -- TODO: Add missing
 
-    VimwikiLink {fg = clrs.nord8, gui = spec.underline},
-    VimwikiHeaderChar {base.Keyword},
-    VimwikiHR {base.Keyword},
-    VimwikiList {base.Keyword},
+    VimwikiLink { fg = clrs.nord8, gui = spec.underline },
+    VimwikiHeaderChar { base.Keyword },
+    VimwikiHR { base.Keyword },
+    VimwikiList { base.Keyword },
   }
 end
 

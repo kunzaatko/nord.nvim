@@ -70,7 +70,7 @@ local spec = {
 spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ""
 M.spec = spec
 
-M.gui_combine = function(gui)
+M.gui_combine = function( gui )
   for i = 1, #gui do
     if gui[i] == "" then
       table.remove(gui, i)

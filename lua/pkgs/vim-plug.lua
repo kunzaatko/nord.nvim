@@ -6,7 +6,7 @@ local palette = require 'nord-palette'
 
 local clrs = palette.clrs
 local pkg = function()
-  return {plugDeleted {fg = clrs.nord11}}
+  return { plugDeleted { fg = clrs.nord11 } }
 end
 
 return pkg
