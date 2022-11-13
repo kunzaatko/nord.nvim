@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local lush = require 'lush'
 local v = vim.g -- this must be done, because lush is executed in a bare environment
 local palette = require 'nord-palette'
