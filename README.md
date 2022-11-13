@@ -37,7 +37,7 @@ vim.g.nord_pkgs = {'gitsigns', 'vim-startify'} -- 'ale', 'coc', 'ctrlp', 'haskel
 
 This may decrease your loading time. It should not be an issue on modern machines, but nevertheless, it makes the loading just a little bit more snappy and you can be sure that nothing you do not care for is slowing you down.
 
-The default behaviour remains the same, that is, that all the language support specs and plugins that are in the original are loaded. You can add others by defining the global variables as stated above. Additional package support groups you can add are `{'vimtex', 'cmp', 'gitsigns', 'vim-startify'}` and languages `{'gitcommit'}`.
+The default behaviour remains the same, that is, that all the language support specs and plugins that are in the original are loaded. You can add others by defining the global variables as stated above. Additional package support groups you can add are `{'vimtex', 'cmp', 'cmp_vscode', 'gitsigns', 'vim-startify'}` and languages `{'gitcommit'}`. `cmp_vscode` is are highlights as defined in the `cmp` wikipage that make the highlights same as in vscode.
 
 # Tweaking
 
