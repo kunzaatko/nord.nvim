@@ -1,9 +1,9 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 
 local clrs = palette.clrs
 local lang = function()
-  return {jsonKeyword {fg = clrs.nord7}}
+  return { jsonKeyword { fg = clrs.nord7 } }
 end
 
 return lang

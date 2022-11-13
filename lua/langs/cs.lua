@@ -1,11 +1,11 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local base = require 'base'
 
 local lang = function()
   return {
-    csPreCondit {base.PreCondit},
-    csType {base.Type},
-    csXmlTag {base.SpecialComment},
+    csPreCondit { base.PreCondit },
+    csType { base.Type },
+    csXmlTag { base.SpecialComment },
   }
 end
 

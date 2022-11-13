@@ -1,8 +1,8 @@
 # Nord.nvim
 
-A port of the popular and simplistic [nord](https://www.nordtheme.com/) colour scheme to neovim. The [`trunk`](https://github.com/kunzaatko/nord.nvim/tree/trunk) branch is an exact clone of the [nord-vim](https://github.com/arcticicestudio/nord-vim) colourscheme but written in [lush.nvim](https://github.com/rktjmp/lush.nvim).
+A port of the popular and simplistic [nord](https://www.nordtheme.com/) colour scheme to neovim.
 
-![nord.nvim](https://user-images.githubusercontent.com/56647779/117521912-a0188b00-afb0-11eb-857a-7554874c5050.png)
+![showcase](https://user-images.githubusercontent.com/56647779/144943017-1a14824c-326b-4ee5-9f09-8489742bbf8a.png)
 
 # Customization
 
@@ -80,8 +80,5 @@ All plugins that are in the [vim port](https://github.com/arcticicestudio/nord-v
 
 # Contribution
 
-This branch is intended to be an _exact copy_ of the [vim port](https://github.com/arcticicestudio/nord-vim) in the base spec. However, if you want to add support for a plugin, you can do so by adding the spec to the `lua/pkgs/` directory. To load it by default, you should add it to the default list `vim.g.nord_pkgs` in `lua/nord-nvim.lua`. Don't forget to add it to the `README.md` to document it for other users.
-
-If you want a customized (not the unofficial) nord theme, switch to the [`colourful`](https://github.com/kunzaatko/nord.nvim/tree/colourful) branch. There you can file issues even for the base specification, if you think anything could look better and submit anykind of PRs.
-
+If you want to add support for a plugin, you can do so by adding the spec to the `lua/pkgs/` directory. To load it by default, you should add it to the default list `vim.g.nord_pkgs` in `lua/nord-nvim.lua`. Don't forget to add it to the `README.md` to document it for other users.
 <!-- vim:set et sw=4 ts=4 nowrap: -->

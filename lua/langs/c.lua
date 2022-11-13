@@ -1,14 +1,13 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 local base = require 'base'
 
 local clrs = palette.clrs
 local lang = function()
   return {
-    cIncluded {fg = clrs.nord7},
-    cOperator {base.Operator},
-    cPreCondit {base.PreCondit},
-
+    cIncluded { fg = clrs.nord7 },
+    cOperator { base.Operator },
+    cPreCondit { base.PreCondit },
   }
 end
 

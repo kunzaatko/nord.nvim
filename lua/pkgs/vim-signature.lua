@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 
 -- vim-signature
@@ -6,7 +6,7 @@ local palette = require 'nord-palette'
 
 local clrs = palette.clrs
 local pkg = function()
-  return {SignatureMarkText {fg = clrs.nord8}}
+  return { SignatureMarkText { fg = clrs.nord8 } }
 end
 
 return pkg

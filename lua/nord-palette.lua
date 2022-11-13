@@ -1,4 +1,4 @@
-local lush = require('lush')
+local lush = require 'lush'
 local hsl = lush.hsl
 local v = vim.g -- this must be done, because lush is executed in a bare environment
 
@@ -61,18 +61,18 @@ local cfg = {
 M.cfg = cfg
 
 local spec = {
-  bold = cfg.nord_bold == 1 and "bold" or "",
-  italic = cfg.nord_italic == 1 and "italic" or "",
-  underline = cfg.nord_underline == 1 and "underline" or "",
-  inverse = "inverse",
-  undercurl = "undercurl",
+  bold = cfg.nord_bold == 1 and 'bold' or '',
+  italic = cfg.nord_italic == 1 and 'italic' or '',
+  underline = cfg.nord_underline == 1 and 'underline' or '',
+  inverse = 'inverse',
+  undercurl = 'undercurl',
 }
-spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ""
+spec['italicize_comments'] = cfg.nord_italic_comments == 1 and spec.italic or ''
 M.spec = spec
 
 M.gui_combine = function(gui)
   for i = 1, #gui do
-    if gui[i] == "" then
+    if gui[i] == '' then
       table.remove(gui, i)
     end
   end

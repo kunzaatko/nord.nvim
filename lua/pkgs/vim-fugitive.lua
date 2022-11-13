@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 
 -- fugitive.vim
@@ -7,9 +7,9 @@ local palette = require 'nord-palette'
 local clrs = palette.clrs
 local pkg = function()
   return {
-    gitcommitDiscardedFile {fg = clrs.nord11},
-    gitcommitUntrackedFile {fg = clrs.nord11},
-    gitcommitSelectedFile {fg = clrs.nord14},
+    gitcommitDiscardedFile { fg = clrs.nord11 },
+    gitcommitUntrackedFile { fg = clrs.nord11 },
+    gitcommitSelectedFile { fg = clrs.nord14 },
   }
 end
 

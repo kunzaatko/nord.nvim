@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 
 -- Haskell
@@ -7,9 +7,9 @@ local palette = require 'nord-palette'
 local clrs = palette.clrs
 local pkg = function()
   return {
-    haskellPreProc {fg = clrs.nord10},
-    haskellType {fg = clrs.nord7},
-    haskellPragma {haskellPreProc},
+    haskellPreProc { fg = clrs.nord10 },
+    haskellType { fg = clrs.nord7 },
+    haskellPragma { haskellPreProc },
   }
 end
 

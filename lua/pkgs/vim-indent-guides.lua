@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 
 -- vim-indent-guides
@@ -6,7 +6,7 @@ local palette = require 'nord-palette'
 
 local clrs = palette.clrs
 local pkg = function()
-  return {IndentGuidesEven {bg = clrs.nord1}, IndentGuidesOdd {bg = clrs.nord2}}
+  return { IndentGuidesEven { bg = clrs.nord1 }, IndentGuidesOdd { bg = clrs.nord2 } }
 end
 
 return pkg

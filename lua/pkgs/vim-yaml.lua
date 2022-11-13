@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 local palette = require 'nord-palette'
 
 -- YAML
@@ -6,7 +6,7 @@ local palette = require 'nord-palette'
 
 local clrs = palette.clrs
 local pkg = function()
-  return {yamlKey {fg = clrs.nord7}}
+  return { yamlKey { fg = clrs.nord7 } }
 end
 
 return pkg
